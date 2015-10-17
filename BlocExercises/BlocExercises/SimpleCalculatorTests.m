@@ -17,13 +17,13 @@
 
 @implementation SimpleCalculatorTests
 
-- (void)setUp
-{
+- (void)setUp{
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
     
     self.calculator = [[SimpleCalculator alloc] init];
 }
+
 
 - (void) testThatIncrementsWork {
     NSInteger sourceNumber = 17;
@@ -34,6 +34,7 @@
     resultNumber = [self.calculator increaseNumberBy1:sourceNumber];
     XCTAssertTrue(resultNumber == 973, @"972 + 1 = 973");
 }
+
 
 - (void) testThatAdditionWorks {
     NSInteger firstOperand = 17;
